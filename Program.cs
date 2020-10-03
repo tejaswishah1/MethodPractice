@@ -6,28 +6,23 @@ namespace Method
     {
       public  static void Main(string[] args)
         {
-            int SumIs = 0;
-            int ProdIs = 0;
-
-            int a = 0;
-            Console.WriteLine("Enter first Number");
-            a = Convert.ToInt32(Console.ReadLine());
-
-            int b = 0;
-            Console.WriteLine("Enter second Number");
-            b = Convert.ToInt32(Console.ReadLine());
-
-            Caclculate(a,b, out SumIs, out ProdIs);
-            Console.WriteLine("The sum of 2 numbers is "+ SumIs);
-            Console.WriteLine("The product of 2 numbers is "+ProdIs);
-
-
-
+            Program.CalculateEvenNumber(50);
         }
-        public static void Caclculate(int num1, int num2, out int Sum, out int Prod)
+        public static void CalculateEvenNumber(int target)
         {
-            Sum = num1 + num2;
-            Prod = num1 * num2;
+            Console.WriteLine("Enter the number");
+            int num1 = 0;
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            while (num1 <= target)
+            {
+                Console.WriteLine(num1);
+                num1 = num1 + 2;
+            }
+           
+             
+
+            
         }
            
     }
